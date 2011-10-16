@@ -21,5 +21,5 @@ for script in $(rbenv-hooks exec); do
 done
 
 shift 1
-export PATH="${RBENV_BIN_PATH}:${PATH}"
+export PATH="${PATH}:${RBENV_BIN_PATH}"
 exec -a "$RBENV_COMMAND" "$RBENV_COMMAND_PATH" "$@"
